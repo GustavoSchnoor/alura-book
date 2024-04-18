@@ -2,6 +2,7 @@ const elementoParaInserirLivros = document.getElementById('livros');
 
 /// OBSERVAÇÃO: .toFixed(2) faz com que tenha somente 2 numeros após o ponto
 function exibirOsLivrosNaTela(listaDeLivros) {
+    elementoParaInserirLivros.innerHTML = '';
     listaDeLivros = listaDeLivros.forEach(livro => {
         elementoParaInserirLivros.innerHTML += `
         <div class="livro">
